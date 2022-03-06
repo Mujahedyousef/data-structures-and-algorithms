@@ -1,50 +1,58 @@
 'use strict';
 
 // Require our linked list implementation
-const LinkedLilst = require('../index');
+const LinkedList = require('../index.js');
 
 describe('Linked List', () => {
-  it('test create ll', () => {
-    let ll = new LinkedLilst()
-    expect(ll).toBeTruthy();
-    expect(ll.head).toBeNull()
+  it('test create empty ll', () => {
+    const ll = new LinkedList();
+    expect(ll).toBeDefined();
+    expect(ll.head).toBeNull();
+  });
+})
+// we have two cases
+
+describe('insert to the beginning of ll ', () => {
+  // if ll is empty
+  it('test case 1 add to empty LL', () => {
+    const ll = new LinkedList();
+    ll.insert('a');
+    expect(ll.head.value).toBe('a');
+    expect(ll.head.next).toBeNull();
+  });
+  // if ll isn't empty
+  it('test case 2 add to not empty', () => {
+    const ll = new LinkedList();
+    ll.insert('a');
+    ll.insert('b');
+    expect(ll.head.value).toBe('b');
+    expect(ll.head.next.value).toEqual('a');
+    expect(ll.head.next.next).toBeNull();
+  });
+});
+
+describe('Check if ll is includes value or not', () => {
+  it('check includes', () => {
+    const ll = new LinkedList();
+    ll.insert('b');
+    ll.insert('a');
+    ll.includes('a');
+    ll.includes('b');
+
+    expect(ll.includes('a')).toBeTruthy();
+    expect(ll.includes('b')).toBeTruthy();
+    expect(ll.includes('c')).toBeFalsy();
   });
 
-  it('test 2 node insert in empty ll', () => {
-    let ll = new LinkedLilst()
-    ll.insert("a")
-    expect(ll.head.value).toBe("a");
-    expect(ll.head.next).toBeNull()
-  });
-
-  it('test 3 node insert in not empty ll', () => {
-    let ll = new LinkedLilst()
-    ll.insert("a")
-    ll.insert("b")
-    expect(ll.head.value).toBe("b");
-    expect(ll.head.value.next).toBe("a");
-    expect(ll.head.next.next).toBeNull()
-  });
-
-  it('test 4 include', () => {
-    let ll = new LinkedLilst()
-    ll.insert("a")
-    ll.insert("b")
-    ll.include("a")
-    ll.include("b")
-    ll.include("c")
-    expect(ll.include("a")).toBeTruthy();
-    expect(ll.include("b")).toBeTruthy();
-    expect(ll.include("c")).toBeFalsy()
-  });
-
+});
+describe('Check to String', () => {
   it('test 5 toString', () => {
-    let ll = new LinkedLilst()
-    ll.insert("a")
-    ll.insert("b")
-    ll.insert("c")
+    const ll = new LinkedList()
+    ll.insert("c");
+    ll.insert("b");
+    ll.insert("a");
 
-    expect(ll.toString()).toBe("{ a } -> { b } -> { c } -> NULL");
+    expect(ll.toString()).toEqual("{ a } -> { b } -> { c } ->  NULL");
 
   });
 

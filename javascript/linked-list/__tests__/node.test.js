@@ -1,11 +1,12 @@
 "use strict"
 const Node = require('../node')
 
-describe('test class node', () => {
-    it('test node', () => {
-        let node = new Node('a')
-        expect(node).toBeDefined();
-        expect(node.value).toEqual('a')
-        expect(node.next).toBeNull()
+describe('testing Node class', () => {
+    it('test creating a Node instance with next and value',()=>{
+        const value = 'mujahed';
+        const node = new Node(value);
+        expect(node).toBeInstanceOf(Node);
+        expect(node.value).toEqual(value);
+        expect(node.next).toBeNull();
     })
-})
+});

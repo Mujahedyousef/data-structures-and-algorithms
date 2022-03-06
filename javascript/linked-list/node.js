@@ -1,7 +1,7 @@
 "use strict";
 class Node {
     constructor(value, next = null) {
-        this.head = value;
+        this.value = value;
         this.next = next;
     }
 }
