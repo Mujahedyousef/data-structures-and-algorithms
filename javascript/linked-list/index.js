@@ -16,19 +16,6 @@ class LinkedList {
         }
     }
 
-    // append(value) {
-    //     const node = new Node(value);
-    //     if (!this.head) {
-    //         //ll is empty
-    //         this.head = node;
-    //     } else {
-    //         //ll is not empty
-    //         let current = this.head;
-    //         while (current.next) {
-    //             current = current.next;
-    //         }
-    //         current.next = node;
-    //     }}
 
     includes(value) {
         if (this.head != null) {
@@ -61,10 +48,60 @@ class LinkedList {
         } else {
             string = "list empty.";
         }
+    }
+
+
+    append(value) {
+        const node = new Node(value);
+        let current = this.head
+        if (this.head == null) {
+            //ll is empty
+            this.head = node;
+        } else {
+            //ll is not empty
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = node;
+        }
+    }
+
+    insertbefore(value, newvalue) {
+        const node = new Node(newvalue)
+        let currentValue = this.head
+        if (currentValue.next != null) {
+            currentValue = currentValue.next
+            if (currentValue.next.value == value) {
+                node.next = currentValue.next
+                currentValue.next = node
+                return null
+            }
+
+
+        }
+
+    }
+    insertAfter(value, newvalue) {
+        const node = new Node(newvalue)
+        let currentValue = this.head
+        if (currentValue.next != null) {
+            currentValue = currentValue.next
+            if (currentValue.value == value) {
+                node.next = currentValue.next
+                currentValue.next = node
+                return null
+            }
+
+
+        }
 
     }
 
 
+
 }
+
+
+
 
 module.exports = LinkedList;

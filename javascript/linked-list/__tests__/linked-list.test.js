@@ -55,6 +55,55 @@ describe('Check to String', () => {
     expect(ll.toString()).toEqual("{ a } -> { b } -> { c } ->  NULL");
 
   });
+})
 
+describe('Check for append method', () => {
+  it('test for append method added 3 node', () => {
+    const ll = new LinkedList()
+    ll.append("1");
+    ll.append("2");
+    ll.append("3");
+
+    expect(ll.head.value).toBe("1");
+    expect(ll.head.next.value).toBe("2");
+    expect(ll.head.next.next.value).toBe("3");
+    expect(ll.head.next.next.next).toBeNull();
+
+  });
+
+});
+describe('Check for insert before method', () => {
+  it('test for insert before added new node  before node is Existing', () => {
+    const ll = new LinkedList()
+
+    ll.insert("4");
+    ll.insert("2");
+    ll.insert("1");
+
+    ll.insertbefore("4", "3")
+    expect(ll.head.value).toBe("1");
+    expect(ll.head.next.value).toBe("2");
+    expect(ll.head.next.next.value).toBe("3");
+    expect(ll.head.next.next.next.value).toBe("4");
+    expect(ll.head.next.next.next.next).toBeFalsy();
+
+  });
+
+});
+
+describe('Check for insert after method', () => {
+  it('test for insert  new node  after node is Existing', () => {
+    const ll = new LinkedList()
+    ll.insert("2");
+    ll.insert("3");
+    ll.insert("1")
+    ll.insertAfter("3", "5")
+    expect(ll.head.value).toBe("1");
+    expect(ll.head.next.value).toBe("3");
+    expect(ll.head.next.next.value).toBe("5");
+    expect(ll.head.next.next.next.value).toBe("2");
+    expect(ll.head.next.next.next.next).toBeFalsy();
+
+  });
 
 });
