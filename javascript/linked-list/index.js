@@ -96,10 +96,30 @@ class LinkedList {
         }
 
     }
+    Kth(k) {
+        let current = this.head
+        let i = 0
+        while (current != null) {
+            current = current.next;
+            i++
+        }
+        if (k < 0 || k > i) {
+            return "exception"
+        } else {
+            i = i - 1 - k
+            current = this.head;
+            while (i > 0) {
+                current = current.next;
+                i--
+            }
+            return current.value;
+        }
 
-
-
+    }
 }
+
+
+
 
 
 
