@@ -116,7 +116,28 @@ class LinkedList {
         }
 
     }
+    zipLists(l1, l2) {
+        let l3, tail, pred;
+        l3=new LinkedList('');
+        tail = l3;
+        while(l1 || l2){
+          if(l1 !== null) tail.value += l1.value;
+          if(l2 !== null) tail.value += l2.value;
+    
+          tail.next = new LinkedList('');
+          pred = tail;
+          tail = tail.next;
+    
+          l1 = l1 ? l1.next : l1;
+          l2 = l2 ? l2.next : l2;
+        }
+        pred.next = null;
+    
+        return l3;
+      }
+
 }
+
 
 
 
