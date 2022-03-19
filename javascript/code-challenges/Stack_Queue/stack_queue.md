@@ -12,10 +12,36 @@
 
 ## Approach & Efficiency
 
-I used all methods an application
-if statement and return
-if all big O equal O(1).
+>A Stack
+
+* push time complexity =  BigO O(1) &&  space = O(1)
+
+* pop time complexity =  BigO O(1)   &&  space = O(1)
+* peek time complexity = BigO O(1)   &&  space = O(1)
+* isEmpty time complexity =  BigO O(1)   &&  space = O(1)
+
+> A Queue
+
+* enqueue time complexity =  BigO O(n) &&  space = O(1)
+* dequeue time complexity =  BigO O(1) &&  space = O(1)
+* peek time complexity =  BigO O(1) &&  space = O(1)
+* isEmpty time complexity =  BigO O(1) &&  space = O(1)
 
 ## API
 
-test
+>A Stack
+
+> FILO
+
+* push()
+* pop()
+* peek()
+* isEmpty()
+
+> A Queue
+
+* enqueue
+* dequeue
+* peek
+* isEmpty
+
