@@ -65,37 +65,69 @@ class LinkedList {
             current.next = node;
         }
     }
-
-    insertbefore(value, newvalue) {
-        const node = new Node(newvalue)
-        let currentValue = this.head
-        if (currentValue.next != null) {
-            currentValue = currentValue.next
-            if (currentValue.next.value == value) {
-                node.next = currentValue.next
-                currentValue.next = node
-                return null
-            }
-
-
+    // in this method i can added any where (befor or after)
+    insertAt(value, index) {
+        //  If index is out of range
+        if (index > 0 && index > this.size) {
+            return;
         }
 
-    }
-    insertAfter(value, newvalue) {
-        const node = new Node(newvalue)
-        let currentValue = this.head
-        if (currentValue.next != null) {
-            currentValue = currentValue.next
-            if (currentValue.value == value) {
-                node.next = currentValue.next
-                currentValue.next = node
-                return null
-            }
-
-
+        // If first index
+        if (index === 0) {
+            this.insert(value);
+            return;
         }
 
+        const node = new Node(value);
+        let current, previous;
+
+        // Set current to first
+        current = this.head;
+        let count = 0;
+
+        while (count < index) {
+            previous = current; // Node before index
+            count++;
+            current = current.next; // Node after index
+        }
+
+        node.next = current;
+        previous.next = node;
+
+        this.size++;
     }
+
+
+    insertBefore(value, newValue) {
+        const node = new Node(newValue);
+
+        let current = this.head;
+        while (current.next.value !== value) {
+            current = current.next;
+        }
+        node.next = current.next;
+        current.next = node;
+    }
+
+
+
+
+
+    insertAfter(value, newValue) {
+        let node = new Node(newValue);
+        let current = this.head;
+        while (current) {
+            if (current.value === value) {
+                node.next = current.next;
+                current.next = node;
+                break;
+            }
+            current = current.next;
+        }
+    }
+
+
+
     Kth(k) {
         let current = this.head
         let i = 0
@@ -118,23 +150,23 @@ class LinkedList {
     }
     zipLists(l1, l2) {
         let l3, tail, pred;
-        l3=new LinkedList('');
+        l3 = new LinkedList('');
         tail = l3;
-        while(l1 || l2){
-          if(l1 !== null) tail.value += l1.value;
-          if(l2 !== null) tail.value += l2.value;
-    
-          tail.next = new LinkedList('');
-          pred = tail;
-          tail = tail.next;
-    
-          l1 = l1 ? l1.next : l1;
-          l2 = l2 ? l2.next : l2;
+        while (l1 || l2) {
+            if (l1 !== null) tail.value += l1.value;
+            if (l2 !== null) tail.value += l2.value;
+
+            tail.next = new LinkedList('');
+            pred = tail;
+            tail = tail.next;
+
+            l1 = l1 ? l1.next : l1;
+            l2 = l2 ? l2.next : l2;
         }
         pred.next = null;
-    
+
         return l3;
-      }
+    }
 
 }
 
