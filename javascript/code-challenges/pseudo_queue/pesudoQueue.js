@@ -13,19 +13,16 @@ class pesudoQueue {
 
     dequeue() {
 
-        if (this.firstStack.top == null) {
-            return 'exception'
-        } else {
-            while (this.firstStack.top !== null) {
-                this.socendStack.pushItem(this.firstStack.popItem())
+        while (this.firstStack.top !== null) {
+            this.socendStack.pushItem(this.firstStack.popItem())
 
-            }
-            return this.socendStack.popItem()
-            //    console.log(this.socendStack.popItem());
         }
-    }
+        return this.socendStack.popItem()
 
+    }
 }
+
+
 
 
 module.exports = pesudoQueue;

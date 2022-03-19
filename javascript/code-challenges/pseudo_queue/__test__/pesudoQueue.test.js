@@ -8,26 +8,28 @@ describe('test the pseudoQueue ', () => {
         expect(pesudoQueueForTest).toBeInstanceOf(pesudoQueue);
 
     })
-    it('test enqueue ', () => {
-        pesudoQueueForTest.enqueue('20');
-        pesudoQueueForTest.enqueue('15');
-        pesudoQueueForTest.enqueue('10');
-        pesudoQueueForTest.enqueue('5');
-        console.log(pesudoQueueForTest.firstStack);
-        expect(pesudoQueueForTest.firstStack.top.value).toBe('5');
-        expect(pesudoQueueForTest.socendStack.top).toBeNull();
 
+    it('test enqueue ', () => {
+        pesudoQueueForTest.enqueue(20);
+        expect(pesudoQueueForTest.firstStack.peek().value).toBe(20);
+        pesudoQueueForTest.enqueue(15);
+        expect(pesudoQueueForTest.firstStack.peek().value).toBe(15);
+        pesudoQueueForTest.enqueue(10);
+        expect(pesudoQueueForTest.firstStack.peek().value).toBe(10);
+        pesudoQueueForTest.enqueue(5);
+        expect(pesudoQueueForTest.firstStack.peek().value).toBe(5);
+        expect(pesudoQueueForTest.firstStack.top.value).toBe(5);
+        expect(pesudoQueueForTest.socendStack.top).toBeNull();
     })
+
 
     it('test dequeue', () => {
-        pesudoQueueForTest.dequeue();
-        pesudoQueueForTest.dequeue();
-        pesudoQueueForTest.dequeue();
-        pesudoQueueForTest.dequeue();
-        console.log(pesudoQueueForTest.socendStack);
-        expect(pesudoQueueForTest.socendStack.top.value).toEqual('20');
-        expect(pesudoQueueForTest.firstStack.isEmpty()).toBeTruthy;
 
+        expect(pesudoQueueForTest.dequeue()).toEqual(20);
+        expect(pesudoQueueForTest.dequeue()).toEqual(15);
+        expect(pesudoQueueForTest.dequeue()).toEqual(10);
+        expect(pesudoQueueForTest.dequeue()).toEqual(5);
     })
+
 
 })
