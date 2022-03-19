@@ -80,7 +80,7 @@ describe('Check for insert before method', () => {
     ll.insert("2");
     ll.insert("1");
 
-    ll.insertbefore("4", "3")
+    ll.insertBefore("4", "3")
     expect(ll.head.value).toBe("1");
     expect(ll.head.next.value).toBe("2");
     expect(ll.head.next.next.value).toBe("3");
