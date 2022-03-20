@@ -8,7 +8,7 @@
 |   Code Challenge: Class 04 (Linked List Implementation) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/linked-list/README.md)  |
 |   Code Challenge: Class 06 (linked-list-insertions) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/linked-list/insert.md)  |
 |    Class 10: Stack and a Queue Implementation |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/Stack_Queue/stack_queue.md)  |
-|   Code Challenge: Class 11 |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/pseudo_queue/pseudoQueue.md)  |
+|   Code Challenge: pseudo-Queue |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/pseudo_queue/pseudoQueue.md)  |
 
 
 
