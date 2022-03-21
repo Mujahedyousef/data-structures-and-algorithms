@@ -80,7 +80,7 @@ describe('Check for insert before method', () => {
     ll.insert("2");
     ll.insert("1");
 
-    ll.insertbefore("4", "3")
+    ll.insertBefore("4", "3")
     expect(ll.head.value).toBe("1");
     expect(ll.head.next.value).toBe("2");
     expect(ll.head.next.next.value).toBe("3");
@@ -106,6 +106,7 @@ describe('Check for insert after method', () => {
 
   });
 
+
   
   describe('test zip method for two linked list', () => {
     it('test', () => {
@@ -122,4 +123,7 @@ describe('Check for insert after method', () => {
         expect(ll.zip(LLOne, LLTwo).toString()).toEqual("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } ->  NULL");
     })
 })
-})
+
+
+
+
