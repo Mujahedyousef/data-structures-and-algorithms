@@ -106,24 +106,20 @@ describe('Check for insert after method', () => {
 
   });
 
-  describe('Check for zip method', () => {
-    it('test for zip two ll', () => {
-      const ll1 = new LinkedLilst();
-      const ll2 = new LinkedLilst();
-      ll1.insert(3);
-      ll1.insert(6);
-      ll1.insert(5);
-      
-      ll2.insert(3);
-      ll2.insert(2);
-      ll2.insert(1);
-      
-     
-      expect(ll1.zipLists(ll1, ll2)).toBe('{ 3 } -> { 3 } -> { 6 } -> { 2 } -> { 1 } -> NULL')
-       expect(ll1.zipLists(ll1, ll2)).toBe('{ 3 } -> { 3 } -> { 6 } -> { 2 } -> { 5 } -> { 1 } -> NULL')
-      expect(ll1.zipLists(ll1, ll2)).toBe('{ 3 } -> { 3 } -> { 6 } -> { 2 } -> { 5 } -> NULL');
-    
+  
+  describe('test zip method for two linked list', () => {
+    it('test', () => {
+        const LLOne = new LinkedList();
+        LLOne.insert('5');
+        LLOne.insert('3');
+        LLOne.insert('1');
+        const LLTwo = new LinkedList();
+        LLTwo.insert('6');
+        LLTwo.insert('4');
+        LLTwo.insert('2');
+        const ll = new LinkedList();
 
-  })
+        expect(ll.zip(LLOne, LLTwo).toString()).toEqual("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } ->  NULL");
+    })
 })
 })
