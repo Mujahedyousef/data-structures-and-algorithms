@@ -10,7 +10,7 @@
 |   Code Challenge: Class 08 (linked-list-zip) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/linked-list/Zip.md)  |
 |  Code Challenge:   Class 10 (Stack and a Queue Implementation) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/Stack_Queue/stack_queue.md)  |
 |   Code Challenge: Class 11 (pseudo-Queue) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/pseudo_queue/pseudoQueue.md)  |
-|   Code Challenge: Class 11 (stack-queue-brackets.js ) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/stack-queue-brackets/validate_brackets.md)  |
+|   Code Challenge: Class 13 (stack-queue-brackets.js ) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/stack-queue-brackets/validate_brackets.md)  |
 
 
 
