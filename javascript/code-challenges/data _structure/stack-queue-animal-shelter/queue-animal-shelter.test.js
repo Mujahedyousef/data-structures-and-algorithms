@@ -1,6 +1,6 @@
 'use strict'
 
-const AnimalShelter = require('./AnimalShelter.js');
+const AnimalShelter = require('./AnimalShelter.js.js');
 
 
 describe('Test Queue method)', () => {
