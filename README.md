@@ -11,8 +11,8 @@
 |   Code Challenge: Class 07 (linked-list-kth) |  [README.md]()  |
 |   Code Challenge: Class 08 (linked-list-zip) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/linked-list/Zip.md)  |
 |   Code Challenge: Class 09 (Reverse a Linked List) |  [Link](https://docs.google.com/spreadsheets/d/1P6Mldov6jGBT84KmWkEks_tEzYwXAJjnJWPwZSymGWw/edit?usp=sharing)  |
-|  Code Challenge:   Class 10 (Stack and a Queue Implementation) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/Stack_Queue/stack_queue.md)  |
-|   Code Challenge: Class 11 (pseudo-Queue) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/pseudo_queue/pseudoQueue.md)  |
+|  Code Challenge:   Class 10 (Stack and a Queue Implementation) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/Stack_Queue/stack_queue.md)  |
+|   Code Challenge: Class 11 (pseudo-Queue) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/pseudo_queue/pseudoQueue.md)  |
 |   Code Challenge: Class 12 (stack-queue-animal-shelter) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/stack-queue-animal-shelter/AnimalSHelter.md)  |
 |   Code Challenge: Class 13 (stack-queue-brackets) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/stack-queue-brackets/validate_brackets.md)  |
 |   Code Challenge: Class 15: (Binary Tree and BST Implementation) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/Binary_Tree/tree.md)  |
