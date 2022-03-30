@@ -16,6 +16,6 @@
 |   Code Challenge: Class 12 (stack-queue-animal-shelter) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/stack-queue-animal-shelter/AnimalSHelter.md)  |
 |   Code Challenge: Class 13 (stack-queue-brackets) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/stack-queue-brackets/validate_brackets.md)  |
 |   Code Challenge: Class 15: (Binary Tree and BST Implementation) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/Binary_Tree/tree.md)  |
-
+|   Code Challenge: Class 16: (Binary Tree maximum value ) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/Binary_Tree/BT_find_max.md)  |
 
 
