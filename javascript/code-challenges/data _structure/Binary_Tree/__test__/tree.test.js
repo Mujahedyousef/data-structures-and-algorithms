@@ -16,6 +16,8 @@ describe('Binary Tree', () => {
         let seven = new Node(7);
         let eight = new Node(8);
         let nine = new Node(9);
+        
+
 
         // this based on our example that we mentioned in the class
         // see attached image (tree-example.png)
@@ -27,6 +29,7 @@ describe('Binary Tree', () => {
         seven.right = nine;
         three.left = four;
         three.right = five;
+       
 
         // create a tree and pass root to it
         tree = new binary_tree(one);
@@ -56,7 +59,11 @@ describe('Binary Tree', () => {
         console.log("postOrder output ---->", postOrder);
         expect(postOrder).toEqual(expectedOutput);
     });
-
+    it('max', () => {
+        let max = tree.max();
+        console.log("max value ---->", max);
+        expect(tree.max()).toEqual(9);
+    });
 });
 
 
