@@ -107,6 +107,7 @@ describe('Check for insert after method', () => {
   });
 
 
+
   
   describe('test zip method for two linked list', () => {
     it('test', () => {
@@ -124,6 +125,19 @@ describe('Check for insert after method', () => {
     })
 })
 
+})
+describe('test for kth method', () => {
+  it('test the position of value', () => {
+    const LL = new LinkedList();
+    LL.append(3);
+    LL.append(4);
+    LL.append(5);
+    expect(LL.Kth(0)).toBe(5);
+    expect(LL.Kth(1)).toBe(4);
+    expect(LL.Kth(3)).toBe(3);
+    expect(LL.Kth(9)).toEqual('exception')
+    expect(LL.Kth(-2)).toEqual('exception')
 
-
+  })
 });
+
