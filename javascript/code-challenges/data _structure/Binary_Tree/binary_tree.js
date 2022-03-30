@@ -54,6 +54,53 @@ class binary_tree {
         traverse(this.root);
         return result;
     }
+
+    max() {
+        let max = 0;
+        let array = this.per_Order();
+
+        array.map(element => {
+            if (element > max) {
+                max = element;
+            }
+
+        })
+        return max;
+    }
+    //     max() {
+    //         let biggerValue = 0;
+    //         let biggerValueLeft;
+    //         let biggerValueRight;
+
+    //         let current = this.root;
+    //         if (current === null) {
+    //             return "empty tree";
+    //         }
+    //         else {
+    //             biggerValue = current.value;
+    //             while (current.left) {
+    //                 if (current.left.value > current.value) {
+    //                     biggerValue = current.left.value;
+    //                     biggerValueLeft = current.left.value;
+    //                 }
+    //                 current = current.left;
+    //             }
+    //             while (current.right) {
+    //                 if (current.right.value > current.value) {
+
+    //                     biggerValue = current.right.value;
+    //                     biggerValueRight = current.right.value;
+    //                 }
+    //                 current = current.right;
+    //             }
+
+    //         }
+    //         return biggerValue;
+    //     }
+
+    // }
+
+
 }
 
 //===========================new class =======================================
