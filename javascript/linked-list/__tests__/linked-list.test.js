@@ -136,4 +136,6 @@ describe('Check for insert after method', () => {
         expect(LL.Kth(-2)).toEqual('exception')
 
       })
+
     });
+
