@@ -108,33 +108,33 @@ describe('Check for insert after method', () => {
 
 })
 
-  describe('test zip method for two linked list', () => {
-    it('test', () => {
-      const LLOne = new LinkedList();
-      LLOne.insert('5');
-      LLOne.insert('3');
-      LLOne.insert('1');
-      const LLTwo = new LinkedList();
-      LLTwo.insert('6');
-      LLTwo.insert('4');
-      LLTwo.insert('2');
-      const ll = new LinkedList();
+describe('test zip method for two linked list', () => {
+  it('test', () => {
+    const LLOne = new LinkedList();
+    LLOne.insert('5');
+    LLOne.insert('3');
+    LLOne.insert('1');
+    const LLTwo = new LinkedList();
+    LLTwo.insert('6');
+    LLTwo.insert('4');
+    LLTwo.insert('2');
+    const ll = new LinkedList();
 
-      expect(ll.zip(LLOne, LLTwo).toString()).toEqual("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } ->  NULL");
-    })
+    expect(ll.zip(LLOne, LLTwo).toString()).toEqual("{ 1 } -> { 2 } -> { 3 } -> { 4 } -> { 5 } -> { 6 } ->  NULL");
   })
-    describe('test for kth method', () => {
-      it('test the position of value', () => {
-        const LL = new LinkedList();
-        LL.append(3);
-        LL.append(4);
-        LL.append(5);
-        expect(LL.Kth(0)).toBe(5);
-        expect(LL.Kth(1)).toBe(4);
-        expect(LL.Kth(3)).toBe(3);
-        expect(LL.Kth(9)).toEqual('exception')
-        expect(LL.Kth(-2)).toEqual('exception')
+})
+describe('test for kth method', () => {
+  it('test the position of value', () => {
+    const LL = new LinkedList();
+    LL.append(3);
+    LL.append(4);
+    LL.append(5);
+    expect(LL.Kth(0)).toBe(5);
+    expect(LL.Kth(1)).toBe(4);
+    expect(LL.Kth(3)).toBe(3);
+    expect(LL.Kth(9)).toEqual('exception')
+    expect(LL.Kth(-2)).toEqual('exception')
 
-      })
+  })
 
-    });
+});
