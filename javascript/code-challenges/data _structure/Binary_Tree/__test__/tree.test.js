@@ -1,7 +1,6 @@
 'use strict';
 const { BinarySearchTree } = require('../binary_tree');
 const { binary_tree } = require('../binary_tree');
-const Breadth_first = require('../Breadth-First')
 const Node = require('../node');
 
 
@@ -134,7 +133,7 @@ describe('Breadth first test', () => {
 
 
         // create a tree and pass root to it
-        treeBF = new Breadth_first(one);
+        treeBF = new binary_tree(one);
     });
 
     it('constructor', () => {
