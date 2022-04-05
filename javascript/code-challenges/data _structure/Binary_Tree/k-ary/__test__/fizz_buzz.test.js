@@ -1,6 +1,7 @@
 "use strict";
 const Node = require('../node');
 const k_ary_tree = require('../k-ary');
+const { it } = require('eslint/lib/rule-tester/rule-tester');
 
 
 describe('test for k_ary', () => {
@@ -16,7 +17,7 @@ describe('test for k_ary', () => {
         let six = new Node(6);
         let seven = new Node(7);
         let eight = new Node(8);
-        let nine = new Node(9);
+        let nine = new Node(15);
         let ten = new Node(10);
         one.children.push(two)
         one.children.push(three)
@@ -29,10 +30,15 @@ describe('test for k_ary', () => {
         four.children.push(ten)
         k_tree = new k_ary_tree(one)
     })
-    it('test k_tree', () => {
-        let out = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        let output = k_tree.tree_fizz_buzz()
-        console.log(output);
-        expect(output).toEqual(out)
+    // it('test k_tree', () => {
+    //     let out = [1, 2, 3, 4, 5, 6, 7, 8, 15, 10]
+    //     let output = k_tree.tree_fizz_buzz()
+    //     console.log(output);
+    //     expect(output).toEqual(out)
+    // })
+    it('return words', () => {
+        let words = ['1', '2', 'fizz', '4', 'buzz', 'fizz', '7', '8', 'fizzbuzz', 'buzz']
+        console.log(k_tree.tree_fizz_buzz());
+        expect(k_tree.tree_fizz_buzz()).toEqual(words)
     })
 })
