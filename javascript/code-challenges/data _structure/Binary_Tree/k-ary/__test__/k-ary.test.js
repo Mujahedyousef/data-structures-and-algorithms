@@ -1,6 +1,6 @@
 "use strict";
 const Node = require('../node');
-const k_ary_tree = require('../k-ary');
+const k_ary_tree = require('../k-ary-tree');
 
 describe('test for k_ary', () => {
     let k_tree = null;
