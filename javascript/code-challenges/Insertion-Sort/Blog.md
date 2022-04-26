@@ -33,21 +33,21 @@ SelectionSort(int[] arr)
 
 ![step1](./images/step1.PNG)
 
-1. So we replace 14 with 10. After one iteration 10, which happens to be the minimum value in the list, appears in the first position of the sorted list
+2. So we replace 14 with 10. After one iteration 10, which happens to be the minimum value in the list, appears in the first position of the sorted list
 
 ![step2](./images/step2.PNG)
 
-1. For the second position, where 33 is residing, we start scanning the rest of the list in a linear manner.
+3. For the second position, where 33 is residing, we start scanning the rest of the list in a linear manner.
 
 ![step3](./images/step3.PNG)
 
-1. We find that 14 is the second lowest value in the list and it should appear at the second place. We swap these values.
+4. We find that 14 is the second lowest value in the list and it should appear at the second place. We swap these values.
 After two iterations, two least values are positioned at the beginning in a sorted manner.
 
 ![step4](./images/step4.PNG)
 
 
-1. The same process is applied to the rest of the items in the array.
+5. The same process is applied to the rest of the items in the array.
 
 ![step5](./images/step5.PNG)
 
