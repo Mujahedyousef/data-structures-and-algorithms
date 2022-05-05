@@ -20,3 +20,5 @@
 |   Code Challenge: Class 17: (Binary Tree Breadth-first Traversal. ) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/Binary_Tree/Breadth_tree.md)  |
 |   Code Challenge: Class 18: ( “FizzBuzz” on a k-ary tree) |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/Binary_Tree/k-ary/k-ary.md)  |
 |   Code Challenge: Class 26: Insertion sort  |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/Insertion-Sort/Blog.md)  |
+|   Code Challenge: Class 27: Merge sort |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/merge_Sort/blog.md)  |
+
