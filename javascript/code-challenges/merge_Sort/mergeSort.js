@@ -1,19 +1,17 @@
 "use strict";
 
-
-
-
 function mergeSort(arr){
     let len = arr.length;
-    if(len>1){
+    if(len<=1){
+        return arr;
+    }
         let mid = Math.floor(len/2);
         let left = arr.slice(0,mid);
         let right = arr.slice(mid);
         mergeSort(left);
         mergeSort(right);
-        merge(arr,left,right);
-    return arr;
-        
+        return  merge(arr,left,right);
+    
     }
 
         function merge(arr,left,right){
@@ -30,16 +28,18 @@ function mergeSort(arr){
                 }
                 k++;
             }
-            if(i===left.length){
-                while(j<right.length){
-                    arr[k] = right[j];
-                    j++;
-                    k++;
-                }
+            if(i==left.length){
+                
+                arr[k] = right[j];
+                j++;
+                k++;
+            }else {
+                arr[k] = left[i];
+                i++;
+                k++;
             }
             return arr;
-            }
         }
-       
+   
     
 module.exports = mergeSort;
