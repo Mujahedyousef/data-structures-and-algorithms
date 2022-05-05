@@ -60,5 +60,5 @@ ALGORITHM Merge(left, right, arr)
 ----------------
 |name|link|
 |----|----|
-|PR|[PR merge sort]()|
+|PR|[PR merge sort](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/30)|
 |READ ME|[merge Sort](./mergeSort.md)|
