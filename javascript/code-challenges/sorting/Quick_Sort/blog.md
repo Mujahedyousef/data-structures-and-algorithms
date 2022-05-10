@@ -69,5 +69,5 @@ ALGORITHM Swap(arr, i, low)
 
 |name|link|
 |----|----|
-|PR|[PR Quick sort]()|
+|PR|[PR Quick sort](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/32)|
 |README|[Quick Sort](./quick_sort.md)|
