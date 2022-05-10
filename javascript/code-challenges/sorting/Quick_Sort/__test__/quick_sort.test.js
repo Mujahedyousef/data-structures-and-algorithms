@@ -1,14 +1,20 @@
 "use strict";
+const quickSortRecursive = require("../quick_sort");
 
-const quickSort = require("../quick_sort");
-describe("testing quickSort", () => {
-  let arr_1 = [2, 1,  7, 10,  6];
-  let arr_2 = [0, -5, 13, 5, 7, 20, 6];
-  let arr_3 = [23, 0, 9, 6, 1, 7, 26];
- let n=arr_1.length -1;
- let n2=arr_2.length -1;
- let n3=arr_3.length -1;
-  expect(quickSort(arr_1,0, n )).toEqual([1, 2, 6, 7,  10]);
-  expect(quickSort(arr_2,0, n2)).toEqual([-5, 0, 5, 6, 7, 13, 20]);
-  expect(quickSort(arr_3,0, n3)).toEqual([0, 1, 6, 7, 9, 23, 26]);
+describe("test quick sort", () => {
+  it("test quick sort ", () => {
+    const arr = [0, 5, 10, 3, 9, 12];
+    const arr_1 = [-1, 0, 5, 8, 9, 18];
+    const arr_2 = [0, 0, 0, 1, 1, 1, 2, 5, 89, 4, 2, 3, 6, 4, 1, 8, 2, 1];
+
+    expect(quickSortRecursive(arr, 0, arr.length - 1)).toEqual([
+      0, 3, 5, 9, 10, 12,
+    ]);
+    expect(quickSortRecursive(arr_1, 0, arr_1.length - 1)).toEqual([
+      -1, 0, 5, 8, 9, 18,
+    ]);
+    expect(quickSortRecursive(arr_2, 0, arr_2.length - 1)).toEqual([
+      0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 3, 4, 4, 5, 6, 8, 89,
+    ]);
+  });
 });

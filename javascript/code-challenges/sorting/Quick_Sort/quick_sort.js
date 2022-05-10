@@ -1,42 +1,31 @@
 "use strict";
-function quickSort(arr, left, right) {
-if (left < right) {
-    let pivot = partition(arr, left, right);
-    quickSort(arr, left, pivot - 1);
-    quickSort(arr, pivot + 1, right);
-}
-return arr;
 
+function quickSortRecursive(arr, start, end) {
+ 
+  if (start >= end) {
+    return;
+  }
+
+  let index = partition(arr, start, end);
+  quickSortRecursive(arr, start, index - 1);
+  quickSortRecursive(arr, index + 1, end);
+  return arr;
 }
 
-function partition(arr, left, right) {
-    let pivot = arr[Math.floor((left + right) / 2)];
-    let i = left;
-    let j = right;
-    while (i <= j) {
-        while (arr[i] < pivot) {
-            i++;
-        }
-        while (arr[j] > pivot) {
-            j--;
-        }
-        if (i <= j) {
-            swap(arr, i, j);
-            i++;
-            j--;
-        }
+function partition(arr, start, end) {
+  const pivotValue = arr[end];
+  let pivotIndex = start;
+  for (let i = start; i < end; i++) {
+    if (arr[i] < pivotValue) {
+      [arr[i], arr[pivotIndex]] = [arr[pivotIndex], arr[i]];
+
+      pivotIndex++;
     }
-    return i;
+  }
+
+  // Swapping the pivot with the pivotIndex
+  [arr[pivotIndex], arr[end]] = [arr[end], arr[pivotIndex]];
+  return pivotIndex;
 }
 
-function swap(arr, i, j) {
-    let temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-}
-
-
-
-
-
-module.exports = quickSort;
+module.exports = quickSortRecursive;
