@@ -1,11 +1,17 @@
 # Challenge Summary
-<!-- Description of the challenge -->
+
+> Quick sort follows Divide and Conquer algorithm. It is dividing elements into smaller parts based on some condition and performing the sort operations on those divided smaller parts.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+![Whiteboard](./images/whiteboard.PNG)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+* Quick Sort in its general form is an in-place sort (i.e. it doesn’t require any extra storage).
+
+* Time complexity of  O(nLogn). 
+
+* Since at any step in the process, it only swaps elements within the array, it uses O(1) space.
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+![test](./images/test.PNG)
