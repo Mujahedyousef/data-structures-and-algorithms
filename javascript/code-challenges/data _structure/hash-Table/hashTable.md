@@ -87,5 +87,5 @@
 ----
 |name|link|
 |----|----|
-|PR|[PR]()|
-|README|[Hash table]()|
+|PR|[PR](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/33)|
+|README|[Hash table](https://github.com/Mujahedyousef/data-structures-and-algorithms/edit/main/javascript/code-challenges/data%20_structure/hash-Table/hashTable.md)|
