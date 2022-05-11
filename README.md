@@ -22,3 +22,5 @@
 |   Code Challenge: Class 26: Insertion sort  |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/sorting/Insertion-Sort/Blog.md)  |
 |   Code Challenge: Class 27: Merge sort |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/sorting/merge_Sort/blog.md)  |
 |   Code Challenge: Class 28: Quick_Sort |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/sorting/Quick_Sort/blog.md)  |
+|   Code Challenge: Class 30: Hash-table |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/hash-Table/hashTable.md)  |
+
