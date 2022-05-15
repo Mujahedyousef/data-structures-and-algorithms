@@ -21,6 +21,6 @@ I used these methods
 
 * set ( ) :
      - I make this method to set the key and value pair in the table
-     -time efficiency: O(n)
+     - time efficiency: O(n)
 
 ## Solution
