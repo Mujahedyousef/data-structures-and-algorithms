@@ -23,4 +23,6 @@
 |   Code Challenge: Class 27: Merge sort |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/sorting/merge_Sort/blog.md)  |
 |   Code Challenge: Class 28: Quick_Sort |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/sorting/Quick_Sort/blog.md)  |
 |   Code Challenge: Class 30: Hash-table |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/hash-Table/hashTable.md)  |
+|   Code Challenge: Class 31: Hash-table-map-repeted |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/hash-Table/hash_map_repeted/hashMapRepeted.md)  |
+
 
