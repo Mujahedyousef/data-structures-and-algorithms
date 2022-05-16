@@ -1,5 +1,6 @@
 "use strict";
-const hash_Map_repeated_Word=require('../hash_map');
+
+const hash_Map_repeated_Word = require('../hash_map')
 describe('hash_Map_repeated_Word', () => {
 
 

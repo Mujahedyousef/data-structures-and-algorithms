@@ -1,5 +1,5 @@
 "use strict";
-const hash_table=require('../hash_table/hash_table');
+const hash_table=require('../hash_Table');
 
 function hash_Map_repeated_Word(str) {
     let strArr = str.toLowerCase().split(" ");

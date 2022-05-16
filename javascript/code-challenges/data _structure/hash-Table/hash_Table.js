@@ -57,6 +57,9 @@ class HashMap {
 contain(key){
 
     let index=this.hash(key);
+    if(this.map[index]){
+
+    
     let current= this.map[index].head;
     while(current){
 
@@ -66,7 +69,7 @@ contain(key){
         current=current.next;
     }
     return false; 
-}
+}}
 
 keys(){
     let allKey=[];
