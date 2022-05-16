@@ -24,4 +24,4 @@ I used these methods
      - time efficiency: O(n)
 
 ## Solution
-![test](./test.PNG)
+![test](./test.PNG).
