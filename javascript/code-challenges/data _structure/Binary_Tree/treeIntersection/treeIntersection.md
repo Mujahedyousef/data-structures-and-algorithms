@@ -26,3 +26,8 @@ I used these methods
 ## Solution
 
 ![test](./image/test.PNG)
+
+----
+|name|Link|
+|----|----|
+|PR|[PR](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/37)|
