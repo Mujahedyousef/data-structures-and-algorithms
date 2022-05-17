@@ -48,13 +48,13 @@ ALGORITHM Swap(arr, i, low)
 ![sample array](./images/pivot.PNG)
 
 3. I assign a pivot to sort  all the elements that smallest him and put them on the left, and  sort all the elements biggest him and put them on right and put the pivot on middle. 
+ 
 ![partitioning](./images/2.PNG)
 
 4. in the all partition repeat that process and assign a new pivot continuous that to make all array sort.
 
 ![partitioning_2](./images/3.PNG)
 
-![partitioning_3](./images/4.PNG)
 
 5. Finally, it will be done sort.
 
@@ -70,5 +70,5 @@ ALGORITHM Swap(arr, i, low)
 
 |name|link|
 |----|----|
-|PR|[PR Quick sort](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/32)|
+|PR|[PR Quick sort](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/36)|
 |README|[Quick Sort](./quick_sort.md)|
