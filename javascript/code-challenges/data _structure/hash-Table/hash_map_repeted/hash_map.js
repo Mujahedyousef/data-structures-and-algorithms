@@ -2,7 +2,7 @@
 const hash_table=require('../hash_Table');
 
 function hash_Map_repeated_Word(str) {
-    let strArr = str.toLowerCase().split(" ");
+    let strArr = str.toLowerCase().match(/\w+/g);
 
     const strHash = new hash_table(strArr.length);
 

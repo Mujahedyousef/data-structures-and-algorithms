@@ -17,7 +17,7 @@ describe('hash_Map_repeated_Word', () => {
     });
 
     it('test_3', () => {
-        let str_3 = "It was a queer, sultry summer , the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
+        let str_3 = "It was a queer, sultry summer, the summer they electrocuted the Rosenbergs, and I didn’t know what I was doing in New York...";
         let test_3 = hash_Map_repeated_Word(str_3);
         expect(test_3).toEqual('summer');
     });

@@ -43,7 +43,26 @@ class HashMap {
   }
 
   get(key) {
-    let index = this.hash(key);
+
+        let index=this.hash(key);
+        if(this.map[index]){
+
+        
+        let current=this.map[index].head;
+        while(current){
+            if(current.value[key]){
+                return(current.value[key]); 
+            }
+            current=current.next;
+        }}
+        return null;
+
+}
+
+contain(key){
+
+    let index=this.hash(key);
+
     if(this.map[index]){
 
     
@@ -59,19 +78,6 @@ class HashMap {
   return null;
 }
 
-  contain(key) {
-    let index = this.hash(key);
-    if (this.map[index]) {
-      let current = this.map[index].head;
-      while (current) {
-        if (current.value[key]) {
-          return true;
-        }
-        current = current.next;
-      }
-      return false;
-    }
-  }
 
   keys() {
     let allKey = [];
