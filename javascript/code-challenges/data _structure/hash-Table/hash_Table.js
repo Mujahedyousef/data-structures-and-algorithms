@@ -43,13 +43,16 @@ class HashMap {
 
   get(key) {
         let index=this.hash(key);
+        if(this.map[index]){
+
+        
         let current=this.map[index].head;
         while(current){
             if(current.value[key]){
                 return(current.value[key]); 
             }
             current=current.next;
-        }
+        }}
         return null;
 
 }
