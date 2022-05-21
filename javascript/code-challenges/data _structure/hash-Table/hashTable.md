@@ -8,7 +8,7 @@
 
 ## Challenge
 
-### Implement a Hashtable Class with the following methods:
+### Implement a Hashtable Class with the following methods
 
 1. set
 
@@ -39,16 +39,33 @@
 ## Approach & Efficiency
 
 - get method :Retrieving based on a key returns the value stored
-  big o time :o(n)
+
+  big O
+  - time :O(n) //if occur collision become O(n)
+  - space :O(1)
 
 * contains method :returns null for a key that does not exist in the hash table and true if its exist
-  big o time :o(n)
-* keys method : returns a list of all unique keys that exist in the hash table
-  big o time :o(n^2)
-* hash:return the index of the key value object
-  big o time :o(n)
-* set:set the key and value pair in the table
-  big o time :o(n)
+
+  big O
+  - time :O(1) //if occur collision become O(n)
+  - space :O(1)
+
+- keys method : returns a list of all unique keys that exist in the hash table
+
+  big O
+  - time :O(1)
+  - space :O(1)
+
+- hash:return the index of the key value object
+
+  big O
+  - time :O(1)
+  - space :O(1)
+- set:set the key and value pair in the table
+
+  big O
+  - time :O(1)
+  - space :O(1)
 
 ## API
 
