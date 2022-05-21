@@ -43,31 +43,32 @@ ALGORITHM Swap(arr, i, low)
 
 1. input sample array
 
-2. Select an element of the array. This element is generally called the pivot. Most often this element is either the first or the last element in the array.
+2. I want to select an element and compare all elements with it called that pivot
 
-![sample array](./images/1.PNG)
+![sample array](./images/pivot.PNG)
 
-3. Then, rearrange the elements of the array so that all the elements to the left of the pivot are smaller than the pivot and all the elements to the right are greater than the pivot. The step is called partitioning. If an element is equal to the pivot, it doesn't matter on which side it goes.
-
+3. I assign a pivot to sort  all the elements that smallest him and put them on the left, and  sort all the elements biggest him and put them on right and put the pivot on middle. 
+ 
 ![partitioning](./images/2.PNG)
 
-4. Repeat this process individually for the left and right sides of the pivot, until the array is sorted.
+4. in the all partition repeat that process and assign a new pivot continuous that to make all array sort.
 
 ![partitioning_2](./images/3.PNG)
 
-![partitioning_3](./images/4.PNG)
 
-5. Finally, it will be done sort 
+5. Finally, it will be done sort.
 
 ![partitioning_3](./images/5.PNG)
+
 ## Efficency
 
 - Time complexity of O(nLogn).
 
-- space complexity O(1) .
+- space complexity O(1).
+
 ----
 
 |name|link|
 |----|----|
-|PR|[PR Quick sort](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/32)|
+|PR|[PR Quick sort](https://github.com/Mujahedyousef/data-structures-and-algorithms/pull/36)|
 |README|[Quick Sort](./quick_sort.md)|
