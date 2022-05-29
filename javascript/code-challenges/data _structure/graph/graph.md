@@ -2,7 +2,7 @@
 
 * Is a non-linear data structure consisting of a finite set of vertices (nodes) and a set of edges that connect a pair of nodes.
 
-## Terminology
+### Terminology
 
 1. Vertex - a node data object that can have zero or more adjacent vertices.
 1. Edge - a connection between two vertices.
