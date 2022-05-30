@@ -23,15 +23,21 @@ class Graph{
     return vertex;
   }
 
-  addEdge(startVertex, endVertex, weight=0){
-    if(!this.list.has(startVertex) || !this.list.has(endVertex)){
-      return null;
+  addEdge(start, end, weight) {
+    // check if both nodes exist
+    if (!this.list.has(start) || !this.list.has(end)) {
+        console.log('one or both vertex is not existed');
+        return;
     }
-    let edge = new Edge(endVertex, weight);
-    let start = this.list.get(startVertex); 
-    start.push(edge);
-  }
 
+    const adjacencies = this.getNeighbors(start); //array
+    adjacencies.push(new Edge(end, weight));
+
+
+    // bi-directional
+    const adjacencies2 = this.getNeighbors(end); //array
+    adjacencies2.push(new Edge(start,weight));
+}
   getAll(){
     let graph = [];
     for(const [vertex, edge] of this.list.entries()){
@@ -40,21 +46,43 @@ class Graph{
     return graph;
   }
 
-  getNeighbors(vertex){
-    let result = [];
-    if(!this.list.has(vertex)){
-      return null;
+  getNeighbors(vertex) {
+    if (!this.list.has(vertex)) {
+        console.log('node does not exist');
+        return ;
     }
-    let vertexFromList = this.list.get(vertex);
-    for(let i=0; i<vertexFromList.length; i++){
-      result.push(vertexFromList[i].vertex);
-    }
-    return result;
-  }
+    return this.list.get(vertex)
+}
 
   size(){
     return this.list.size; 
   }
+
+  breadthFirst(startNode) {
+    let queue = [];
+    let visitedNodes = new Set();
+    let result=[]
+    queue.push(startNode);
+    visitedNodes.add(startNode);
+
+    result.push(startNode.value)
+    while (queue.length) {
+        const currentNode = queue.shift();
+        const neighbors = this.getNeighbors(currentNode);
+        for (let neighbor of neighbors) {
+            const neighborNode = neighbor.vertex;
+            if (visitedNodes.has(neighborNode)) {
+                continue;
+            } else {
+                visitedNodes.add(neighborNode);
+                result.push(neighborNode.value)
+            }
+            queue.push(neighborNode);
+        }
+    }
+        return result;
+}
+  
 }
 
 module.exports = { Vertex, Edge, Graph };
