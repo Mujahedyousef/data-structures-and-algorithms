@@ -8,7 +8,7 @@
 1. Display the collection.
 
 ## Whiteboard Process
-![whiteboard](./whiteboardBre.PNG)
+![whiteboard](./images/whiteboardBre.PNG)
 ## Approach & Efficiency
 
 * Time Complexity : O(n^2)  
@@ -18,4 +18,4 @@
 
 ## Solution
 
-![test](./test.PNG)
+![test](./images/test.PNG)

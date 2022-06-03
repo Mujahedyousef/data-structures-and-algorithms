@@ -49,7 +49,7 @@
 
 ## test
 
-![test](./test.PNG)
+![test](./images/test.PNG)
 
 |name|link|
 |----|----|
