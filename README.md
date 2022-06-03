@@ -28,5 +28,6 @@
 |   Code Challenge: Class 33: hashmap_left_join |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/hash-Table/hashmap-left-join/hashmap_left_join.md)  |
 |   Code Challenge: Class 35: graph |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/graph/graph.md)  |
 |   Code Challenge: Class 36: graph-breadth-First |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/graph/breadthFirst.md)  |
+|   Code Challenge: Class 37: graph-business-trip |  [README.md](https://github.com/Mujahedyousef/data-structures-and-algorithms/blob/main/javascript/code-challenges/data%20_structure/graph/graph-business-trip/graph-business-trip.md)  |
 
 
